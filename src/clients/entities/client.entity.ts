@@ -12,8 +12,6 @@ export class Client {
     age: number;
     @Column()
     email: string;
-    @Column()
-    Cc: number;
-    @Column()
-    address: string;
+    @Column({ nullable: true })
+    Cc: string;
 }
